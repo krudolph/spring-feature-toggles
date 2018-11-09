@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <title>This feature is enabled</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+
+    <body>
+
+        <span th:if="${feature.isActive('ORDER_CAR')}">ORDER_CAR feature is enabled</span>
+        <br>
+        <span th:if="${!feature.isActive('ORDER_SPACESHIP')}">ORDER_SPACESHIP feature is disabled</span>
+        <br>
+        <span th:if="${!feature.isActive('ORDER_PLANET')}">ORDER_PLANET feature is disabled</span>
+
+    </body>
+
+</html>
